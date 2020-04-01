@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./lib/owl-carousel/owl.theme.default.min.css" />
+    <link href="popup.css" rel="stylesheet" type="text/css" />
+    <title>mocchi</title>
+  </head>
+  <body>
+    <div class="mch-container">
+      <div class="mch-login">
+        <img src="./images/close-dark.png" alt="close-dark" />
+
+        <div class="mch-login-container">
+          <svg
+            width="141"
+            height="31"
+            viewBox="0 0 141 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M134.634 30.2735V10.4211H140.294V30.2735H134.634ZM133.953 3.92475C133.953 2.98325 134.294 2.1897 134.975 1.54409C135.656 0.898487 136.478 0.575684 137.443 0.575684C138.436 0.575684 139.259 0.898487 139.911 1.54409C140.592 2.1897 140.933 2.98325 140.933 3.92475C140.933 4.81246 140.592 5.57911 139.911 6.22472C139.259 6.87032 138.436 7.19312 137.443 7.19312C136.478 7.19312 135.656 6.87032 134.975 6.22472C134.294 5.57911 133.953 4.81246 133.953 3.92475ZM109.781 30.2735H115.441V18.6122C115.498 17.5093 115.867 16.5947 116.548 15.8684C117.229 15.1152 118.165 14.7386 119.357 14.7386C120.719 14.7386 121.697 15.1152 122.293 15.8684C122.917 16.6216 123.229 17.5631 123.229 18.6929V30.2735H128.89V17.7649C128.89 16.6889 128.734 15.6667 128.421 14.6983C128.109 13.7299 127.627 12.896 126.974 12.1966C126.35 11.4971 125.542 10.9457 124.549 10.5422C123.584 10.1118 122.435 9.89659 121.102 9.89659C120.109 9.89659 119.087 10.0714 118.037 10.4211C116.988 10.7439 116.122 11.2954 115.441 12.0755V1.05989H109.781V30.2735ZM47.7447 9.81589C49.3052 9.81589 50.7521 10.0849 52.0856 10.6229C53.4474 11.134 54.6107 11.8603 55.5753 12.8018C56.5683 13.7164 57.3343 14.8193 57.8734 16.1105C58.4408 17.4017 58.7245 18.814 58.7245 20.3473C58.7245 21.8806 58.4408 23.2929 57.8734 24.5841C57.3343 25.8484 56.5683 26.9513 55.5753 27.8928C54.6107 28.8343 53.4474 29.5741 52.0856 30.1121C50.7521 30.6232 49.3052 30.8787 47.7447 30.8787C46.1843 30.8787 44.7231 30.6232 43.3613 30.1121C42.0278 29.5741 40.8646 28.8343 39.8716 27.8928C38.9069 26.9513 38.1409 25.8484 37.5735 24.5841C37.0344 23.2929 36.7649 21.8806 36.7649 20.3473C36.7649 18.814 37.0344 17.4017 37.5735 16.1105C38.1409 14.8193 38.9069 13.7164 39.8716 12.8018C40.8646 11.8603 42.0278 11.134 43.3613 10.6229C44.7231 10.0849 46.1843 9.81589 47.7447 9.81589ZM0.644531 30.2735V10.4211H6.04933V12.8422C6.33305 12.358 6.70188 11.9276 7.15583 11.551C7.60978 11.1743 8.10628 10.865 8.64534 10.6229C9.21278 10.3808 9.79439 10.1925 10.3902 10.058C11.0144 9.92349 11.6102 9.85624 12.1776 9.85624C13.6246 9.85624 14.8871 10.1387 15.9652 10.7036C17.0434 11.2685 17.8519 12.089 18.391 13.165C19.2138 11.9545 20.1784 11.1071 21.2849 10.6229C22.3914 10.1118 23.6398 9.85624 25.03 9.85624C25.9946 9.85624 26.9309 10.0042 27.8388 10.3001C28.7467 10.5691 29.5553 11.0129 30.2646 11.6317C30.9738 12.2504 31.5413 13.0439 31.9669 14.0123C32.3924 14.9538 32.6052 16.0836 32.6052 17.4017V30.2735H27.1153V18.4912C27.1153 17.4152 26.8174 16.5275 26.2216 15.8281C25.6542 15.1018 24.7179 14.7386 23.4128 14.7386C22.1928 14.7386 21.2424 15.1287 20.5614 15.9088C19.8805 16.662 19.5401 17.5766 19.5401 18.6526V30.2735H13.9225V18.4912C13.9225 17.4152 13.6246 16.5275 13.0288 15.8281C12.433 15.1018 11.4967 14.7386 10.22 14.7386C8.97161 14.7386 8.00698 15.1152 7.32606 15.8684C6.64514 16.6216 6.30468 17.5497 6.30468 18.6526V30.2735H0.644531ZM70.5123 15.1421C71.1649 14.9 71.86 14.779 72.5976 14.779C73.9878 14.779 75.0376 15.1287 75.7469 15.8281C76.4845 16.5275 76.9811 17.2941 77.2364 18.128L82.3007 16.514C82.0738 15.6801 81.7049 14.8597 81.1943 14.0527C80.6836 13.2457 80.0168 12.5328 79.194 11.9141C78.3713 11.2954 77.3924 10.7977 76.2576 10.4211C75.1511 10.0176 73.8885 9.81589 72.47 9.81589C70.9379 9.81589 69.5051 10.0849 68.1716 10.6229C66.8666 11.134 65.7175 11.8603 64.7245 12.8018C63.7599 13.7164 62.9938 14.8193 62.4264 16.1105C61.8873 17.4017 61.6178 18.814 61.6178 20.3473C61.6178 21.8806 61.9015 23.2929 62.4689 24.5841C63.0364 25.8484 63.8166 26.9513 64.8096 27.8928C65.8026 28.8343 66.9659 29.5741 68.2993 30.1121C69.6612 30.6232 71.1081 30.8787 72.6402 30.8787C74.0304 30.8787 75.2787 30.677 76.3852 30.2735C77.4917 29.8969 78.4564 29.3992 79.2792 28.7805C80.1019 28.1349 80.7687 27.422 81.2794 26.6419C81.8184 25.8349 82.2014 25.0145 82.4284 24.1806L77.4492 22.6069C77.3357 22.9835 77.1513 23.3736 76.8959 23.7771C76.669 24.1806 76.3569 24.5437 75.9597 24.8665C75.5625 25.1893 75.0802 25.4583 74.5127 25.6735C73.9737 25.8618 73.3495 25.956 72.6402 25.956C71.9025 25.956 71.2074 25.8349 70.5549 25.5928C69.9307 25.3507 69.3633 24.9876 68.8526 24.5034C68.3703 24.0192 67.9872 23.4274 67.7035 22.728C67.4198 22.0286 67.2779 21.235 67.2779 20.3473C67.2779 19.4596 67.4198 18.666 67.7035 17.9666C67.9872 17.2672 68.3703 16.6889 68.8526 16.2316C69.3349 15.7474 69.8881 15.3842 70.5123 15.1421ZM95.7881 14.779C95.0505 14.779 94.3554 14.9 93.7028 15.1421C93.0786 15.3842 92.5254 15.7474 92.0431 16.2316C91.5608 16.6889 91.1777 17.2672 90.894 17.9666C90.6103 18.666 90.4685 19.4596 90.4685 20.3473C90.4685 21.235 90.6103 22.0286 90.894 22.728C91.1777 23.4274 91.5608 24.0192 92.0431 24.5034C92.5538 24.9876 93.1212 25.3507 93.7454 25.5928C94.3979 25.8349 95.093 25.956 95.8307 25.956C96.54 25.956 97.1642 25.8618 97.7032 25.6735C98.2707 25.4583 98.753 25.1893 99.1502 24.8665C99.5474 24.5437 99.8595 24.1806 100.086 23.7771C100.342 23.3736 100.526 22.9835 100.64 22.6069L105.619 24.1806C105.392 25.0145 105.009 25.8349 104.47 26.6419C103.959 27.422 103.292 28.1349 102.47 28.7805C101.647 29.3992 100.682 29.8969 99.5758 30.2735C98.4693 30.677 97.2209 30.8787 95.8307 30.8787C94.2986 30.8787 92.8517 30.6232 91.4898 30.1121C90.1564 29.5741 88.9931 28.8343 88.0001 27.8928C87.0071 26.9513 86.2269 25.8484 85.6595 24.5841C85.092 23.2929 84.8083 21.8806 84.8083 20.3473C84.8083 18.814 85.0778 17.4017 85.6169 16.1105C86.1843 14.8193 86.9504 13.7164 87.915 12.8018C88.908 11.8603 90.0571 11.134 91.3622 10.6229C92.6956 10.0849 94.1284 9.81589 95.6605 9.81589C97.079 9.81589 98.3416 10.0176 99.4481 10.4211C100.583 10.7977 101.562 11.2954 102.385 11.9141C103.207 12.5328 103.874 13.2457 104.385 14.0527C104.895 14.8597 105.264 15.6801 105.491 16.514L100.427 18.128C100.172 17.2941 99.6751 16.5275 98.9374 15.8281C98.2281 15.1287 97.1784 14.779 95.7881 14.779ZM54.8834 23.8438C55.4944 22.7451 55.814 21.5185 55.814 20.2726H54.7782C50.3859 20.2726 46.164 18.5726 42.9974 15.5287L42.3597 14.9158C41.4432 15.7967 40.7669 16.8813 40.3907 18.0735C40.0144 19.2657 39.9499 20.5287 40.2028 21.7506C40.4556 22.9725 41.0181 24.1156 41.8403 25.0787C42.6625 26.0417 43.7192 26.795 44.9166 27.2717C46.114 27.7485 47.4153 27.934 48.7052 27.8119C49.995 27.6898 51.2337 27.2638 52.3113 26.5717C53.389 25.8795 54.2724 24.9426 54.8834 23.8438Z"
+              fill="#00D489"
+            />
+          </svg>
+
+          <p>
+            Make money with friends for recommendations.
+          </p>
+
+          <div class="mch-login__button">
+            <a href="#" class="mch-login__button--singin">Sign In</a>
+            <a href="#" class="mch-login__button--join">Join Mocchi</a>
+          </div>
+        </div>
+      </div>
+      <div class="mch-wrapper">
+        <div class="mch-content">
+          <!-- bell tab-1 start  -->
+          <div class="mch-content__item mch-nav-1" id="mch-content-1">
+            <div class="mch-content-1__wrapper">
+              <header class="mch-content-1__header">
+                <div>
+                  <img class="mch-content-1__header__logo" src="./images/logo-mocchi.png" alt="logo-mocchi" />
+                  <img class="mch-content-1__header__close" src="./images/close.png" alt="close-icon" />
+                </div>
+                <h2>American Express</h2>
+                <p>Earn With Friends Using Amex</p>
+              </header>
+  
+              <div class="mch-content-1__body">
+                <div class="mch-content-1__body__list">
+                  <img
+                    class="mch-content-1__body__list--imageleft"
+                    src="./images/trend-list/image-right-1.png"
+                    alt="image-left"
+                  />
+                  <span>Gusto</span>
+                  <a class="mch-content-1__body__list--activate" href="#" data-list="mch-bellIcon-activate">Activate</a>
+                </div>
+
+                <div class="mch-content-1__body__list">
+                  <img
+                    class="mch-content-1__body__list--imageleft"
+                    src="./images/trend-list/image-right-2.png"
+                    alt="image-left"
+                  />
+                  <span>Gusto</span>
+                  <a class="mch-content-1__body__list--activate" href="#" data-list="mch-bellIcon-activate">Activate</a>
+                </div>
+
+                <div class="mch-content-1__body__list">
+                  <img
+                    class="mch-content-1__body__list--imageleft"
+                    src="./images/trend-list/image-right-3.png"
+                    alt="image-left"
+                  />
+                  <span>Gusto</span>
+                  <a class="mch-content-1__body__list--activate" href="#" data-list="mch-bellIcon-activate">Activate</a>
+                </div>
+
+  
+                <div class="mch-content-1__body__btn">
+                  <button>All Referrals</button>
+                </div>
+  
+              </div>
+            </div>
+            <div class="mch-content__item__activatereferral mch-bellIcon-activate" >
+              <header class="mch-content-1__header">
+                <div>
+                  <img class="mch-content-1__header__logo" src="./images/logo-mocchi.png" alt="logo-mocchi" />
+                  <img class="mch-content-1__header__close" src="./images/close.png" alt="close-icon" />
+                </div>
+                <h2>American Express</h2>
+                <p>Earn With Friends Using Amex</p>
+              </header>
+              <div class="mch-content__item__activatereferral--body">
+                <h4>You’ve activated Emma’s referral!</h4>
+                <div>
+                  <img  class="mch-content__item__activatereferral--ellipse" src="./images/referrals/Ellipse 41.png" alt="Ellipse">
+                </div>
+                <div >
+                  <img class="mch-content__item__activatereferral--dollar" src="./images/referrals/dollar-sign.png" alt="Ellipse">
+                </div>
+                <div>
+                  <img class="mch-content__item__activatereferral--left" src="./images/referrals/image-left-3.png" alt="image-left">
+                </div>
+                <div>
+                  <img class="mch-content__item__activatereferral--right" src="./images/referrals/image-right-3.png" alt="image-right">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- bell tab-1 end  -->
+
+          <!-- shopping tab-2 start  -->
+          <div class="mch-content__item mch-nav-2" id="mch-content-2">
+            <header class="mch-content-2__header">
+              <div>
+                <img class="mch-content-2__header__logo" src="./images/logo-mocchi.png" alt="logo-mocchi" />
+                <img class="mch-content-2__header__close" src="./images/close.png" alt="close-icon" />
+              </div>
+              <h2>Trending Referrals</h2>
+            </header>
+
+            <div class="mch-content-2__body">
+
+              <div id="mch-content-2__carousel" class="owl-carousel owl-theme">
+                <div class="mch-content-2__body__head">
+                  <div class="mch-content-2__body__head--item">
+                    <div class="mch-content-2__body__head--top">
+                      <div class="mch-content-2__body__head--top--image">
+                        <img
+                          src="./images/trend-list/image-left-3.png"
+                          alt="image-left-3"
+                        />
+                      </div>
+                      <div class="mch-content-2__body__head--top--content">
+                        <span>Google GSuite</span>
+                        <br>
+                        <a href="#">Activate</a>
+                      </div>
+                    </div>
+
+                    <div class="mch-content-2__body__head--bottom">
+                      <div class="mch-content-2__body__head--bottom--image">
+                        <img
+                          src="./images/trend-list/image-right-3.png"
+                          alt="image-right-3"
+                        />
+                      </div>
+                      <p>Cody Lane</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="mch-content-2__body__head">
+                  <div class="mch-content-2__body__head--item">
+                    <div class="mch-content-2__body__head--top">
+                      <div class="mch-content-2__body__head--top--image">
+                        <img
+                          src="./images/trend-list/image-left-1.png"
+                          alt="image-left-3"
+                        />
+                      </div>
+                      <div class="mch-content-2__body__head--top--content">
+                        <span>Google GSuite</span>
+                        <br>
+                        <a href="#">Activate</a>
+                      </div>
+                    </div>
+
+                    <div class="mch-content-2__body__head--bottom">
+                      <div class="mch-content-2__body__head--bottom--image">
+                        <img
+                          src="./images/trend-list/image-right-1.png"
+                          alt="image-right-3"
+                        />
+                      </div>
+                      <p>Cody Lane</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="mch-content-2__body__head">
+                  <div class="mch-content-2__body__head--item">
+                    <div class="mch-content-2__body__head--top">
+                      <div class="mch-content-2__body__head--top--image">
+                        <img
+                          src="./images/trend-list/image-left-2.png"
+                          alt="image-left-3"
+                        />
+                      </div>
+                      <div class="mch-content-2__body__head--top--content">
+                        <span>Google GSuite</span>
+                        <br>
+                        <a href="#">Activate</a>
+                      </div>
+                    </div>
+
+                    <div class="mch-content-2__body__head--bottom">
+                      <div class="mch-content-2__body__head--bottom--image">
+                        <img
+                          src="./images/trend-list/image-right-2.png"
+                          alt="image-right-3"
+                        />
+                      </div>
+                      <p>Cody Lane</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="mch-content-2__body__head">
+                  <div class="mch-content-2__body__head--item">
+                    <div class="mch-content-2__body__head--top">
+                      <div class="mch-content-2__body__head--top--image">
+                        <img
+                          src="./images/trend-list/image-left-3.png"
+                          alt="image-left-3"
+                        />
+                      </div>
+                      <div class="mch-content-2__body__head--top--content">
+                        <span>Google GSuite</span>
+                        <br>
+                        <a href="#">Activate</a>
+                      </div>
+                    </div>
+
+                    <div class="mch-content-2__body__head--bottom">
+                      <div class="mch-content-2__body__head--bottom--image">
+                        <img
+                          src="./images/trend-list/image-right-4.png"
+                          alt="image-right-3"
+                        />
+                      </div>
+                      <p>Cody Lane</p>
+                    </div>
+
+                  </div>
+                </div>     
+              </div>
+
+
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/app-bg-lines-copy.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-1.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/image-left-1.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-4.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/image-left-2.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-3.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/image-left-3.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-4.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/app-bg-lines-copy.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-1.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/image-left-1.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-2.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/image-left-2.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-3.png"
+                  alt="image-right"
+                />
+              </div>
+              <div class="mch-content-2__body__list">
+                <img
+                  class="mch-content-2__body__list--imageleft"
+                  src="./images/trend-list/image-left-3.png"
+                  alt="image-left"
+                />
+                <div class="mch-content-2__body__list--description">
+                  <span>Gusto</span>
+                  <br>
+                  <a href="#">Activate</a>
+                </div>
+                <img
+                  class="mch-content-2__body__list--imageright"
+                  src="./images/trend-list/image-right-4.png"
+                  alt="image-right"
+                />
+              </div>
+
+            </div>
+
+
+          </div>
+          <!-- shopping tab-2 end  -->
+
+          <!-- user tab-3 start  -->
+          <div class="mch-content__item mch-nav-3" id="mch-content-3">
+            <header class="mch-content-3__header">
+                <img class="mch-content-3__header__logo" src="./images/logo-mocchi-green.png" alt="logo-mocchi" />
+                <img class="mch-content-3__header__close" src="./images/close-dark.png" alt="close-icon" />
+                <div class="mch-content-3__nav">
+                  <ul>
+                    <li class="active" data-list="mch-referrals">
+                      Referrals
+                    </li>
+                    <li data-list="mch-profile">
+                      Profile
+                    </li>
+                  </ul>
+                </div>
+            </header>
+
+              <div class="mch-content-3__content">
+                
+                <div class="mch-content-3__content__item mch-referrals">
+                  <div class="mch-content-3__content__item__header">
+                    <h4>Active Referrals</h4>
+                  </div>
+                  <div class="mch-content-3__content__list">
+                    <img
+                      class="mch-content-3__content__list--imageleft"
+                      src="./images/trend-list/image-left-1.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-3__content__list">
+                    <img
+                      class="mch-content-3__content__list--imageleft"
+                      src="./images/trend-list/image-left-2.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-3__content__list">
+                    <img
+                      class="mch-content-3__content__list--imageleft"
+                      src="./images/trend-list/image-left-3.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="mch-content-3__content__item mch-profile">
+                  <div class="mch-content-3__content__item--profile">
+                    <form>
+                      <input type="text" id="fname" name="firstname" placeholder="First Name">
+                      <input type="text" id="lname" name="lastname" placeholder="Last Name">    
+                      <input type="email" id="email" name="email" placeholder="Emai Address">    
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+          <!-- user tab-3 end  -->
+
+          <!-- contact tab-4 start  -->
+          <div class="mch-content__item mch-nav-4" id="mch-content-4">
+            <header class="mch-content-4__header">
+              <img class="mch-content-4__header__logo" src="./images/logo-mocchi-green.png" alt="logo-mocchi" />
+              <img class="mch-content-4__header__close" src="./images/close-dark.png" alt="close-icon" />
+              <div class="mch-content-4__nav">
+                <ul>
+                  <li class="active" data-list="mch-contact">
+                    My contact
+                  </li>
+                  <li data-list="mch-suggetions">
+                    My Suggetions
+                  </li>
+                </ul>
+              </div>
+            </header>
+
+              <div class="mch-content-4__content">
+                <div class="mch-content-4__content__item mch-contact">
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-1.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-2.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-3.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-4.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  
+                </div>
+                <div class="mch-content-4__content__item mch-suggetions">
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-1.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-2.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-3.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-4.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/app-bg-lines-copy.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-1.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-2.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-3.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/image-right-4.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/app-bg-lines-copy.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+
+            
+                </div>
+              </div>
+
+          </div>
+          <!-- contact tab-4 end  -->
+        </div>
+
+        <nav id="mch-nav">
+          <div class="mch-nav__iconbox active" id="mch-bellIcon" data-list="mch-nav-1">
+              <svg
+                class="mch-nav__icon active"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6981 21.5547 10.4458 21.3031 10.27 21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="mch-nav__iconbox" data-list="mch-nav-2">
+              <svg
+                class="mch-nav__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 6H21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="mch-nav__iconbox" data-list="mch-nav-3">
+              <svg
+                class="mch-nav__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="mch-nav__iconbox" data-list="mch-nav-4">
+              <svg
+                class="mch-nav__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M17 20V18C17 16.9391 16.7366 15.9217 16.2678 15.1716C15.7989 14.4214 15.163 14 14.5 14H9.5C8.83696 14 8.20107 14.4214 7.73223 15.1716C7.26339 15.9217 7 16.9391 7 18V20M23 18V16C23 14.9391 22.7893 13.9217 22.4142 13.1716C22.0391 12.4214 21.5304 12 21 12H19M1 18V16C1 14.9391 1.21071 13.9217 1.58579 13.1716C1.96086 12.4214 2.46957 12 3 12H5M5 9C3.89543 9 3 8.10457 3 7C3 5.89543 3.89543 5 5 5M19 9C20.1046 9 21 8.10457 21 7C21 5.89543 20.1046 5 19 5M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <script src="./lib/JQuery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
